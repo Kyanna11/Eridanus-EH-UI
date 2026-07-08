@@ -156,7 +156,6 @@ function CustomTabBar({ state, descriptors, navigation }: any) {
         { height: (isEH ? 62 : 68) + bottomInset, paddingBottom: bottomInset + (isEH ? 4 : 6) },
         keyboardVisible && styles.tabBarHidden,
       ]}
-      {...(isEH && Platform.OS === "web" ? { dataSet: { noise: "1" } } as any : {})}
     >
       {isEH && Platform.OS === "web" && (
         <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 1, backgroundColor: "rgba(255,255,255,0.15)" }} />
